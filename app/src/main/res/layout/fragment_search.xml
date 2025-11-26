@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.search.SearchFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp">
+
+        <com.example.chefx_android.presentation.components.CustomAppBar
+            android:id="@+id/abDetailAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/searchInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/search_recipes"
+                    app:hintEnabled="false"
+                    app:boxCornerRadiusTopStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusBottomEnd="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/search_recipes"
+                        android:fontFamily="@font/poppins_regular"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/sfSearchRecipes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="180dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/rounded_border"
+                                    android:backgroundTint="@color/shimmer_grey"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSearchRecipes"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <com.example.chefx_android.presentation.components.ErrorStateView
+                        android:id="@+id/evErrorState"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    tools:context=".presentation.activity.meal_detail.MealDetailActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <com.example.chefx_android.presentation.components.CustomAppBar
+            android:id="@+id/abDetailAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/llContentView">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/llRandomRecipeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="35dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivRandomRecipeImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:scaleType="centerCrop"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/ivRecipeFav"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/bg_white_circle"
+                            android:gravity="center">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivRecipeFavIcon"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/fav_icon_selector"/>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                    </RelativeLayout>
+
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/btYoutube"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_grey_border_16r"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/ic_ytube" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="@string/youtube"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/btSource"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/rounded_grey_border_16r"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/ic_browser" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="@string/source"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMealName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/instructions"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMealDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="8"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/ingredients"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvIngredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.core.widget.NestedScrollView>
+            <com.example.chefx_android.presentation.components.ErrorStateView
+                android:id="@+id/evErrorState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvIngredient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="15sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/inactive_grey"
+        android:textSize="15sp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.settings.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_app_logo"
+                android:tint="@color/app_color"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chefx"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="4dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_1_0_0"
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="24dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/aboutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/this_recipe_app_helps_users_explore_meals_from_around_the_world_using_themealdb_api_discover_categories_ingredients_detailed_cooking_steps_and_high_quality_food_images_icons_are_sourced_from_flaticon_and_images_belong_to_their_respective_owners_as_provided_by_the_api"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#444444"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginBottom="24dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/developer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/devName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/author"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/credits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/creditsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recipe_data_themealdb_api_n_icons_flaticon_n_images_provided_by_respective_owners_via_api"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp"
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginBottom="40dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</FrameLayout>

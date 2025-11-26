@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selected / active -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/app_color" />
+        </shape>
+    </item>
+
+    <!-- Unselected / default -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+</selector>

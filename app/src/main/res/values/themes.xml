@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChefX_android" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- App background -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@android:color/holo_red_dark</item>
+
+        <!-- Force dark icons on status bar -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.ChefX_android" parent="Base.Theme.ChefX_android" />
+</resources>

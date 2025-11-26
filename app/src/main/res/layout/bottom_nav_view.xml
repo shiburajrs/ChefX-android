@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <FrameLayout
+        android:id="@+id/itemHome"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/navHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_home" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/itemSearch"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/navSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_search" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/itemFav"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/navFav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_heart" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/itemProfile"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/navProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_profile" />
+    </FrameLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

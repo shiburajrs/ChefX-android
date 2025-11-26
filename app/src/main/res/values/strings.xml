@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ChefX_android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover_best_recipes">Discover best recipes</string>
+    <string name="a_special_pick_just_for_you_try_this_random_recipe">A special pick just for you — try this random recipe!</string>
+    <string name="trending_recipes">Trending Recipes</string>
+    <string name="recipe_details">Recipe Details</string>
+    <string name="instructions">Instructions</string>
+    <string name="youtube">Youtube</string>
+    <string name="source">Source</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="search_recipes">Search recipes...</string>
+    <string name="your_favourites">Your favourites</string>
+    <string name="search_recipes_text">Search recipes</string>
+    <string name="chefx">ChefX</string>
+    <string name="version_1_0_0">Version 1.0.0</string>
+    <string name="this_recipe_app_helps_users_explore_meals_from_around_the_world_using_themealdb_api_discover_categories_ingredients_detailed_cooking_steps_and_high_quality_food_images_icons_are_sourced_from_flaticon_and_images_belong_to_their_respective_owners_as_provided_by_the_api">This Recipe App helps users explore meals from around the world using TheMealDB API. Discover categories, ingredients, detailed cooking steps, and high-quality food images. Icons are sourced from Flaticon, and images belong to their respective owners as provided by the API.</string>
+    <string name="developer">Developer</string>
+    <string name="author">Shiburaj RS</string>
+    <string name="credits">Credits</string>
+    <string name="recipe_data_themealdb_api_n_icons_flaticon_n_images_provided_by_respective_owners_via_api">• Recipe Data: TheMealDB API\n• Icons: Flaticon\n• Images: Provided by respective owners via API</string>
+</resources>
